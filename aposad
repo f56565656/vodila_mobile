@@ -1,0 +1,15 @@
+from flask import Flask  
+app = Flask (__name__) 
+ 
+@app.route ("/") 
+def hello_world(): 
+    return "Hello world!" 
+@app.route('/goods') 
+def goods(): 
+    return "ТОВАРЫ" 
+@app.route('/goods/<goods_id') 
+def one_good(goods_id): 
+    return f"ТОВАР-{GOODS_ID}" 
+ 
+if name == '__main__': 
+    app.run()
